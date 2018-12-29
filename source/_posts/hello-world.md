@@ -1,5 +1,6 @@
 ---
-title: Tổng Bí thư làm việc tại Bộ Công Thương - Chủ quan, sơ sẩy là hậu quả khôn lường!
+title: Tổng Bí thư làm việc tại Bộ Công Thương - Chủ quan là hậu quả khôn lường!
+categories: [Dev]
 ---
 Phát biểu tại cuộc làm việc, Tổng bí thư Nguyễn Phú Trọng cho rằng, sau Đại hội XII, trong bối cảnh còn nhiều khó khăn, Bộ Công Thương đã phải xử lý nhiều vấn đề “đau đầu”, rất nhiều áp lực, dù không muốn gợi lại nhưng đó là sự thật.
 

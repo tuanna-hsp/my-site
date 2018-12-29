@@ -1,0 +1,14 @@
+<section class="section">
+    <div class="container">
+        <% var post = page; %>
+        <article class="article content gallery" itemscope itemprop="blogPost">
+            <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+                <%= post.title %>
+            </h1>
+            <br>
+            <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+                <%- post.content %>
+            </div>
+        </article>
+    </div>
+</section>
