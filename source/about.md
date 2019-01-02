@@ -11,12 +11,11 @@ In my free time I enjoy reading books, playing game or just hanging around.
 ### What I do
 Currently a coder at DMM GAMES.
 
-### Contact me
+### Contact
 Email:&nbsp;[tuanna.hsp@gmail.com](mailto:tuanna.hsp@gmail.com)
-GitHub:&nbsp;[github.com/tuanna-hsp](https://github.com/tuanna-hsp)
 Facebook:&nbsp;[fb.me/tuanna.hsp](https://www.facebook.com/tuanna.hsp)
-LinkedIn:&nbsp;[linkedin.com/in/nguyen-anh-tuan-hsp/](https://www.linkedin.com/in/nguyen-anh-tuan-hsp/)
-Kialog:&nbsp;[kipalog.com/users/tuanna.hsp](https://kipalog.com/users/tuanna.hsp/mypage)
+
+Also see me on [GitHub](https://github.com/tuanna-hsp), [LinkedIn](https://www.linkedin.com/in/nguyen-anh-tuan-hsp/), [Kipalog](https://kipalog.com/users/tuanna.hsp/mypage), or [Goodread](https://www.goodreads.com/review/list/62827416)
 
 ### Some cookies?
 If you are a Vietnamese learning Japanese, try Suge Dict - a dictionary app that me and my friends made in our freetime, with love.

@@ -30,6 +30,11 @@
             return;
         }
 
+        // Fixed navbar when in desktop layout
+        if ($(document).width() >= 1024) {
+            return;
+        }
+
         // If they scrolled down and are past the navbar, add class .navbar-down.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight) {

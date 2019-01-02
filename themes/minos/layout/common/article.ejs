@@ -18,7 +18,7 @@
                     .join('<span>></span>') %>
         </span>
         <% } %>
-        <% if (!has_config('article.readtime') || get_config('article.readtime') === true) && article.categories[0] !== "Static" { %>
+        <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
         <span class="column is-narrow">
             <!-- <% let words = word_count(post._content); %> -->
             <% let time = duration((words / 150.0) * 60, 'seconds') %>
