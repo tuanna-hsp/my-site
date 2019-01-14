@@ -40,7 +40,7 @@ Checkin online rồi thì lúc ra sân bay chỉ cần cầm hộ chiếu đến
 ## Thủ tục ở sân bay
 Cầm sẵn **hộ chiếu**, **thẻ ngoại kiều** (在留カード) và **boarding pass** (nếu checkin-online sẽ được phát lúc gửi hành lý).
 #### Chiều về Việt Nam
-Trước cửa soát an ninh có chỗ để giấy *再入国*, nếu bay về Việt Nam chơi xong quay lại Nhật thì điền thông tin vào giấy này rồi cầm theo, người ta sẽ đóng ghim vào hộ chiếu.
+Trước cửa soát an ninh có chỗ để giấy 再入国, nếu bay về Việt Nam chơi xong quay lại Nhật thì điền thông tin vào giấy này rồi cầm theo, người ta sẽ đóng ghim vào hộ chiếu.
 #### Chiều quay lại Nhật
 Lúc trên máy bay có thể được phát giấy 再入国 (màu trắng) và giấy điền thông tin đồ đạc cầm theo (màu vàng).
 Chỉ cần điền thông tin đồ đạc (về cơ bản nếu không xách bom theo thì chỉ cần ghi thông tin cá nhân rồi check mấy mục có sẵn là được). Tờ này lúc lấy hành lý xong đi ra cửa sẽ nộp, nếu quên không điền trên máy bay thì xuống đấy viết cũng được không sao. .
