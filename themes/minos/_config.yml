@@ -41,7 +41,7 @@ comment:
 
 # Other plugins and their settings.
 plugins:
-  mathjax: true
+  mathjax: false
   gallery: true
   google-analytics:
     tracking_id: UA-87954601-2
