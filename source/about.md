@@ -9,7 +9,7 @@ I'm a guy who happens to be curious about things.
 In my free time I enjoy reading books, playing game or just hanging around.
 
 ### What I do
-Currently a coder at DMM GAMES.
+Currently a coder.
 
 ### Contact
 Email:&nbsp;[tuanna.hsp@gmail.com](mailto:tuanna.hsp@gmail.com)
