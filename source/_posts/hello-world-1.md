@@ -6,7 +6,7 @@ categories:
 tags:
 ---
 {% asset_img forest.jpg %}
-Built with [Hexo](https://hexo.io/docs/index.html) and [Minos](https://github.com/ppoffice/hexo-theme-minos.git), this will be my place for putting down thought, about... whatever comes to my mind.
+Built with [Hexo](https://hexo.io/docs/index.html) + [Minos](https://github.com/ppoffice/hexo-theme-minos.git), this is my place for putting down thoughts, whatever comes to my mind.
 
-It's will be great if you find something helpful, it's awesome if we become friend.
-Have fun reading.
+It's will be great if you find something helpful, it's awesome if we become friends.
+Have fun reading!
