@@ -36,8 +36,8 @@ share:
 
 # Comment plugin settings.
 comment:
-  type: facebook
-  shortname:
+  type: disqus
+  shortname: blog-z6tqnjrsco
 
 # Other plugins and their settings.
 plugins:
