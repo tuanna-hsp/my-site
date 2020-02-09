@@ -1,6 +1,8 @@
 ---
 title: Writing a simple Hexo plugin
 date: 2020-02-06 23:15:43
+categories:
+- Dev
 tags:
 ---
 
