@@ -2,7 +2,7 @@
 title: Money Forward and my favorite books for 2019
 date: 2019-12-04 00:17:24
 categories:
-- Cookie
+- Gossip
 tags:
 ---
 {% asset_img cover.jpg %}

@@ -4,7 +4,7 @@ date: 2019-01-14 21:40:59
 tags:
 - Memo
 categories:
-- Cookie
+- Gossip
 ---
 {% asset_img sky.jpg %}
 Lần này mình bay khứ hồi từ Nhật về chơi Tết, tầm 23/12 đến 7/1, đi ANA.
