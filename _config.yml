@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Going Nomad
+title: Vove
 subtitle:
 description:
 keywords:
 author: Me
-language: en
+language:
+  - vi
+  - en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.goingnomad.dev/
+url: https://www.vove.dev/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
