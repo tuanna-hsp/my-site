@@ -3,17 +3,20 @@ layout: static
 title: About
 ---
 
-### Brief
-I'm a guy who happens to be curious about things.
-And happens to be a coder.
+Tôi thuở bé đi chăn bò, thích tắm ao.
+Trời bén cho cái tính tò mò, nên giờ làm kỹ sư máy tính.
 
-### Contact
+### Liên hệ
 Email:&nbsp;[tuanna.hsp@gmail.com](mailto:tuanna.hsp@gmail.com)
-Facebook:&nbsp;[fb.me/tuanna.hsp](https://www.facebook.com/tuanna.hsp)
+Facebook:&nbsp;[Link](https://www.facebook.com/tuanna.hsp)
+GitHub: [Link](https://github.com/tuanna-hsp),
+LinkedIn: [Link](https://www.linkedin.com/in/nguyen-anh-tuan-hsp/)
+Kipalog: [Link](https://kipalog.com/users/tuanna.hsp/mypage)
+Goodread: [Link](https://www.goodreads.com/review/list/62827416)
+Twitter: [Link](https://twitter.com/anhtuan__)
 
-Also see me on [GitHub](https://github.com/tuanna-hsp), [LinkedIn](https://www.linkedin.com/in/nguyen-anh-tuan-hsp/), [Kipalog](https://kipalog.com/users/tuanna.hsp/mypage), or [Goodread](https://www.goodreads.com/review/list/62827416)
-
-### Some cookies?
-If you are a Vietnamese learning Japanese, try Suge Dict - a dictionary app that I and my friends made in our free time, with 🖤.
-
-Download it for [Android](https://play.google.com/store/apps/details?id=com.tasogare.dictionary) and [iOS](https://itunes.apple.com/gb/app/suge-dict-tu-dien-nhat-viet/id1446211651).
+### Kẹo tôi làm
+Từ điển Nhật Việt - Nhật Anh
+[Android](https://play.google.com/store/apps/details?id=com.tasogare.dictionary)
+[iOS](https://itunes.apple.com/gb/app/suge-dict-tu-dien-nhat-viet/id1446211651).
+[Web](https://suge.io/)

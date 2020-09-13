@@ -20,9 +20,7 @@ article:
 
 # Navigation bar menu links.
 menu:
-  Dev: /categories/Dev
-  Trà đá: /categories/Gossip
-  Ảnh ọt: /categories/Photography
+  Code: /categories/Code
   About me: /about.html
 
 # Search plugin settings.
@@ -36,13 +34,13 @@ share:
 
 # Comment plugin settings.
 comment:
-  type: disqus
-  shortname: blog-z6tqnjrsco
+  type: commentbox
+  id: 5755917987479552-proj
 
 # Other plugins and their settings.
 plugins:
   mathjax: false
-  gallery: true
+  gallery: false
   google-analytics:
     tracking_id: UA-87954601-2
 
