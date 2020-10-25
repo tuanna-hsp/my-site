@@ -15,7 +15,7 @@ Kipalog: [Link](https://kipalog.com/users/tuanna.hsp/mypage)
 Goodread: [Link](https://www.goodreads.com/review/list/62827416)
 Twitter: [Link](https://twitter.com/anhtuan__)
 
-### Kẹo tôi làm
+### Tôi làm
 Từ điển Nhật Việt - Nhật Anh
 [Android](https://play.google.com/store/apps/details?id=com.tasogare.dictionary)
 [iOS](https://itunes.apple.com/gb/app/suge-dict-tu-dien-nhat-viet/id1446211651).

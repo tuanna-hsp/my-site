@@ -6,28 +6,27 @@ categories:
 tags:
 ---
 
-Blog thì trống, GitHub thì xấu.
-Rảnh rỗi sinh nông nổi.
-Thôi thì tôi xách phím di làm thợ nề, đắp thêm cái tường GitHub ít gạch.
+Blog đang trống, GitHub cũng chẳng có gì.
+Thôi thì cũng đang rảnh.
+Tôi xách phím di làm thợ nề, xây thêm cái tường GitHub ít gạch.
 {% asset_img github_graph.png %}
 
 **TL;DR**
 [GitHub repository](https://github.com/tuanna-hsp/hexo-tag-wikipedia)
 <!-- more -->
 
+Thực ra cũng tò mò muốn làm thử một cái plugin cho Hexo xem thế nào.
+
 ### Chọn gạch
 Dùng Hexo mấy lần, thỉnh thoảng lướt trang [plugin](https://hexo.io/plugins/) xem có gì hay.
-Ồ tôi embed được Instagram post vào này.
-Ô Youtube cũng được luôn đây.
-Tiện nhỉ.
+Thấy có một số plugin embed được cả Youtube, Instagram… vào post. Khá cool.
 
-Uhm, Wikipedia thì sao (tại tôi hay đọc Wiki).
+Uhm, Wikipedia thì sao, có vẻ chưa có ai làm.
 Eureka.
 
 ### Chọn xi măng
 Làm sao lấy được dữ liệu Wiki về -> [API](https://www.mediawiki.org/wiki/API:Main_page)
 Làm sao hiển thị trên bài viết -> xem [doc của Hexo](https://hexo.io/api/tag)
-Trộn xi măng.
 
 ### Xây
 
@@ -98,10 +97,7 @@ Kết quả:
 ```
 {% wikipedia title:KISS_principle wikiButton:true %}
 
-### Xuất bản
+### Kết
 Đẩy lên [GitHub](https://github.com/tuanna-hsp/hexo-tag-wikipedia).
 Đăng ký account trên NPM, ấn [publish package](https://www.npmjs.com/package/hexo-tag-wikipedia).
-Ồ, không quên đẩy plugin lên trang [Hexo documentation](https://hexo.io/docs/plugins.html#Publishing), ~~hên xui sẽ có ai đó xài~~.
-
-### PS
-It is **my first ever published** Javascript package.
+Ồ, không quên đẩy plugin lên trang [Hexo documentation](https://hexo.io/docs/plugins.html#Publishing), hên xui sẽ có ai đó xài.
