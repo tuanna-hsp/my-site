@@ -38,6 +38,7 @@ export default {
     "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
+    "@nuxtjs/google-analytics",
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -48,6 +49,10 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  googleAnalytics: {
+    id: "UA-87954601-2",
+  },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
