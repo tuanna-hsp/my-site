@@ -1,8 +1,18 @@
 <template>
   <v-app>
-    <v-main>
-      <nuxt />
-    </v-main>
+    <v-row>
+      <v-col cols="3">
+        <the-sidebar />
+      </v-col>
+
+      <v-divider vertical light />
+
+      <v-col>
+        <v-main>
+          <nuxt />
+        </v-main>
+      </v-col>
+    </v-row>
   </v-app>
 </template>
 
