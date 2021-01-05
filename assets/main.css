@@ -1,0 +1,13 @@
+.v-application a {
+  text-decoration: none;
+  color: inherit !important;
+  border-bottom: 2px solid green;
+}
+
+.v-application time {
+  color: gray;
+}
+
+.nuxt-content img {
+  width: 100%;
+}

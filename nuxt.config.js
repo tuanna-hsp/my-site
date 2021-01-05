@@ -4,6 +4,10 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
+  publicRuntimeConfig: {
+    commentBoxId: process.env.COMMENT_BOX_ID || "5755917987479552-proj",
+  },
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
 
@@ -20,7 +24,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ["~/assets/main"],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -59,6 +63,11 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+        },
+        light: {
+          primary: colors.green,
+          secondary: colors.red.lighten4,
+          accent: colors.indigo.base,
         },
       },
     },
