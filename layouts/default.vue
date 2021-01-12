@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-row>
-      <v-col cols="3">
+      <v-col cols="3" v-if="$vuetify.breakpoint.mdAndUp">
         <the-sidebar />
       </v-col>
 

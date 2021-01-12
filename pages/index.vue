@@ -6,9 +6,6 @@
       </h1>
       <time>{{ formatDate(article.createdAt) }}</time>
       <div class="mt-4">{{ article.description }}</div>
-      <div class="mt-1">
-        <NuxtLink :to="'/' + article.slug">Read more →</NuxtLink>
-      </div>
     </div>
   </v-container>
 </template>

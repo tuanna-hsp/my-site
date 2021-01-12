@@ -11,9 +11,10 @@ Lần này bỏ không dùng [Hexo](https://hexo.io/) nữa mà chuyển sang [N
 - Theme của Hexo khó customize, mình không muốn ngồi vọc CSS chay quá nhiều.
 - Kinh nghiệm dev Nuxt/Vue + một cái component library ngon ngon thì compose UI dễ như ăn bánh.
 - Nuxt từ bản `2.14` đã có thể build full static site.
-- [@nuxt/content](https://content.nuxtjs.org/) dùng để viết post bằng markdown khá ngon, có [live edit](https://content.nuxtjs.org/displaying/#live-editing) ❤️.
+- [@nuxt/content](https://content.nuxtjs.org/) dùng để viết post bằng markdown khá tốt, có [live edit](https://content.nuxtjs.org/displaying/#live-editing) ❤️.
+<br/>
 
-Dù sao thì xây chỉ là một phần, maintain mới là quan trọng. Nên hi vọng với nhà mới, trong năm mới thì cũng viết lách được nhiều hơn, không thành nhà hoang như năm ngoái nữa 😉
+Dù sao thì xây chỉ là một phần, maintain mới là quan trọng. Nên hi vọng với nhà mới, trong năm mới thì cũng viết lách được nhiều hơn, không thành nhà hoang như blog trước 😞.
 
 ## Stack
 
@@ -21,8 +22,12 @@ Base: [Nuxt.js](https://nuxtjs.org/) with [static mode](https://nuxtjs.org/blog/
 CMS: [@nuxt/content](https://content.nuxtjs.org/).<br/>
 Component library: [Vuetify — A Material Design Framework for Vue.js](https://vuetifyjs.com/en/).<br/>
 Comment: [CommentBox.io](https://commentbox.io/), thích tool này vì rất simple.<br/>
-Analytics: [Google Analytics](https://analytics.google.com/).<br/>
+Analytics: [Nuxt Google Analytics](https://google-analytics.nuxtjs.org/).<br/>
 Hosting: [GitHub Pages](https://pages.github.com/)
+
+## Repo
+
+https://github.com/tuanna-hsp/blog
 
 ## Tham khảo
 

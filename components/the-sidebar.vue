@@ -7,7 +7,6 @@
     </v-row>
 
     <v-row justify="center" class="mt-8">
-      <v-icon class="mr-1">mdi-domain</v-icon><span>Money Forward, Inc</span>
       <v-icon class="ml-1">mdi-map-marker</v-icon><span>Tokyo, Japan</span>
     </v-row>
 
