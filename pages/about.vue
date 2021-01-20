@@ -1,10 +1,6 @@
 <template>
   <div class="px-8">
     <the-profile />
-
-    <v-row justify="center" class="mt-8">
-      <h3><nuxt-link to="/">Home</nuxt-link></h3>
-    </v-row>
   </div>
 </template>
 
