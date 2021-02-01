@@ -1,15 +1,10 @@
 <template>
-  <div>
+  <div class="mt-8">
     <v-row justify="center">
-      <v-avatar size="100" class="mt-8">
-        <v-img src="https://avatars1.githubusercontent.com/u/14136939" />
-      </v-avatar>
+      <h1>Tuan</h1>
     </v-row>
 
-    <v-row justify="center" class="mt-8">
-      Tôi thuở bé chăn bò, thích tắm ao. Vi mê chơi game, nên giờ làm kỹ sư máy
-      tính.
-    </v-row>
+    <v-row justify="center" class="mt-8"> Coder. Dreamer. </v-row>
 
     <v-row justify="center" class="mt-8">
       <v-btn
