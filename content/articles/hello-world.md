@@ -12,9 +12,7 @@ Lần này bỏ không dùng [Hexo](https://hexo.io/) nữa mà chuyển sang [N
 - Kinh nghiệm dev Nuxt/Vue + một cái component library ngon ngon thì compose UI dễ như ăn bánh.
 - Nuxt từ bản `2.14` đã có thể build full static site.
 - [@nuxt/content](https://content.nuxtjs.org/) dùng để viết post bằng markdown khá tốt, có [live edit](https://content.nuxtjs.org/displaying/#live-editing) ❤️.
-<br/>
-
-Dù sao thì xây chỉ là một phần, maintain mới là quan trọng. Nên hi vọng với nhà mới, trong năm mới thì cũng viết lách được nhiều hơn, không thành nhà hoang như blog trước 😞.
+  <br/>
 
 ## Stack
 

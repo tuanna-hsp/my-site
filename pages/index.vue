@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div v-for="article of articles" :key="article.slug">
+    <div v-for="article of articles" :key="article.slug" class="mb-4">
       <h1>
         <NuxtLink :to="'/' + article.slug">{{ article.title }}</NuxtLink>
       </h1>
@@ -17,7 +17,7 @@ export default Vue.extend({
   async asyncData({ $content, params }) {
     const articles = await $content("articles", params.slug)
       .only(["title", "description", "slug", "createdAt"])
-      .sortBy("createdAt", "asc")
+      .sortBy("createdAt", "desc")
       .fetch();
 
     return {
