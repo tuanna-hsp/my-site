@@ -1,6 +1,5 @@
 ---
 title: Class design for a simple yet extensible aggregation system
-description: My work on class design at MFi
 createdAt: 2021-12-14
 ---
 

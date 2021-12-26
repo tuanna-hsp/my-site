@@ -1,6 +1,5 @@
 ---
 title: Dynamic form creation and validation with Vuelidate
-description: A note about MFi's frontend implementation
 createdAt: 2021-10-01
 ---
 

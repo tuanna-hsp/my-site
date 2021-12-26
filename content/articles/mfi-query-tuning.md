@@ -1,6 +1,5 @@
 ---
 title: An observation about MySQL join
-description: A note about the query tuning process at MFi
 createdAt: 2021-12-07
 ---
 

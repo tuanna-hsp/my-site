@@ -1,6 +1,5 @@
 ---
 title: Leveraged AWS features to secure user sensitive data
-description: A note about some security considerations we made at MFi
 createdAt: 2021-09-03
 ---
 
