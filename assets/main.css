@@ -11,3 +11,29 @@
 .nuxt-content img {
   width: 100%;
 }
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  width: 100%;
+}
+
+.content {
+  max-width: 900px;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-grow: 1;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+.v-toolbar__content {
+  padding: 0 !important;
+}

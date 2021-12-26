@@ -1,20 +1,22 @@
 <template>
-  <v-container>
-    <h1>
-      {{ article.title }}
-    </h1>
+  <div class="content-wrapper">
+    <div class="content">
+      <h1>
+        {{ article.title }}
+      </h1>
 
-    <v-row>
-      <v-col cols="10">
-        <time>{{ formatDate(article.createdAt) }}</time>
-        <article class="mt-4">
-          <nuxt-content :document="article" />
-        </article>
-      </v-col>
-    </v-row>
+      <v-row>
+        <v-col cols="10">
+          <time>{{ formatDate(article.createdAt) }}</time>
+          <article class="mt-4">
+            <nuxt-content :document="article" />
+          </article>
+        </v-col>
+      </v-row>
 
-    <div class="commentbox mt-8"></div>
-  </v-container>
+      <div class="commentbox mt-8"></div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -44,8 +46,11 @@ export default Vue.extend({
 
   methods: {
     formatDate(date: string) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("vi", options);
+      return new Date(date).toLocaleDateString("en", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
     },
   },
 });

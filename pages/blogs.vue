@@ -1,15 +1,13 @@
 <template>
-  <div class="content-wrapper">
-    <div class="content">
-      <div v-for="article of articles" :key="article.slug" class="mb-4">
-        <h1>
-          <NuxtLink :to="'/' + article.slug">{{ article.title }}</NuxtLink>
-        </h1>
-        <time>{{ formatDate(article.createdAt) }}</time>
-        <div class="mt-4">{{ article.description }}</div>
-      </div>
+  <v-container>
+    <div v-for="article of articles" :key="article.slug" class="mb-4">
+      <h1>
+        <NuxtLink :to="'/' + article.slug">{{ article.title }}</NuxtLink>
+      </h1>
+      <time>{{ formatDate(article.createdAt) }}</time>
+      <div class="mt-4">{{ article.description }}</div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script lang="ts">
