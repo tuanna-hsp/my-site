@@ -39,27 +39,27 @@ export default Vue.extend({
         {
           link: "https://gitconnected.com/tuanna-hsp/resume",
           icon: "mdi-file-account",
-          desc: "View my resume",
+          desc: "Resume",
         },
         {
           link: "https://github.com/tuanna-hsp",
           icon: "mdi-github",
-          desc: "View my GitHub",
+          desc: "GitHub",
         },
         {
           link: "https://www.linkedin.com/in/tuanna-dev",
           icon: "mdi-linkedin",
-          desc: "View my LinkedIn",
+          desc: "LinkedIn",
         },
         {
           link: "mailto:tuanna.hsp@gmail.com",
           icon: "mdi-email-outline",
-          desc: "Email me",
+          desc: "Email",
         },
         {
           link: "https://twitter.com/tuanna_dev",
           icon: "mdi-twitter",
-          desc: "Follow me on Twitter",
+          desc: "Twitter",
         },
       ],
     };
