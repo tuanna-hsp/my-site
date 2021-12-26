@@ -15,7 +15,7 @@
 .content-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
+  padding-top: 24px;
   width: 100%;
 }
 
@@ -31,6 +31,10 @@
   .content {
     padding-left: 28px;
     padding-right: 28px;
+  }
+
+  .content-wrapper {
+    padding-top: 32px;
   }
 }
 
