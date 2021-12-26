@@ -2,9 +2,9 @@
   <div class="content-wrapper">
     <div class="content">
       <div v-for="article of articles" :key="article.slug" class="mb-4">
-        <h1>
+        <h2>
           <NuxtLink :to="'/' + article.slug">{{ article.title }}</NuxtLink>
-        </h1>
+        </h2>
         <time>{{ formatDate(article.createdAt) }}</time>
         <div class="mt-4">{{ article.description }}</div>
       </div>
