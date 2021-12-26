@@ -1,9 +1,10 @@
 ---
 title: Hello World
-description: How this site was built
+createdAt: 2021-01-01
 ---
 
 How this site was built
+<!--more-->
 
 ## Stack
 
