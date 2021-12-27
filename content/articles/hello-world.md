@@ -8,7 +8,7 @@ createdAt: 2021-01-01
 Base: [Nuxt.js](https://nuxtjs.org/) with [static mode](https://nuxtjs.org/blog/going-full-static/).<br/>
 CMS: [@nuxt/content](https://content.nuxtjs.org/).<br/>
 Component library: [Vuetify — A Material Design Framework for Vue.js](https://vuetifyjs.com/en/).<br/>
-Comment: [CommentBox.io](https://commentbox.io/)
+Comment: [CommentBox.io](https://commentbox.io/).<br/>
 Analytics: [Nuxt Google Analytics](https://google-analytics.nuxtjs.org/).<br/>
 Hosting: [GitHub Pages](https://pages.github.com/)
 
