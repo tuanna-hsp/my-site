@@ -6,7 +6,7 @@ export default {
   },
 
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  ssr: true,
 
   publicRuntimeConfig: {
     commentBoxId: process.env.COMMENT_BOX_ID || "5755917987479552-proj",
