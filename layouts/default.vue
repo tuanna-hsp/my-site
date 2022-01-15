@@ -1,13 +1,13 @@
 <template>
   <v-app>
-    <v-app-bar color="white" flat absolute dense>
+    <!-- <v-app-bar color="white" flat absolute dense>
       <div v-if="isMobile" class="header-content mx-auto">
         <nuxt-link class="header-item" to="/">Home</nuxt-link>
         <nuxt-link class="header-item" to="/about">About</nuxt-link>
       </div>
     </v-app-bar>
 
-    <div style="height: 48px" />
+    <div style="height: 48px" /> -->
 
     <v-row id="main">
       <v-main>
@@ -15,10 +15,10 @@
       </v-main>
     </v-row>
 
-    <div v-if="!isMobile" class="side-menu-content">
+    <!-- <div v-if="!isMobile" class="side-menu-content">
       <nuxt-link class="side-menu-item" to="/">Home</nuxt-link>
       <nuxt-link class="side-menu-item" to="/about">About</nuxt-link>
-    </div>
+    </div> -->
   </v-app>
 </template>
 
