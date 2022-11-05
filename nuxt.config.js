@@ -2,7 +2,7 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   generate: {
-    routes: ["/hello-world"],
+    routes: ["/wedding"],
   },
 
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
