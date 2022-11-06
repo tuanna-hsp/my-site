@@ -21,7 +21,7 @@ export default {
 .w-layout {
   background-color: #fff7f2;
   font-family: "VanChuong";
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .w-content {
@@ -30,10 +30,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff7f2;
+  padding-bottom: 32px;
 }
 
 .w-page {
-  padding: 16px;
+  padding: 32px 16px;
   width: 100%;
 }
 </style>

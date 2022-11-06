@@ -1,9 +1,65 @@
 <template>
-  <div>hello</div>
+  <div>
+    <v-img src="/images/wedding-cover.jpeg" />
+    <div v-for="(side, index) in sides" :key="side.name" class="w-event">
+      <h1 class="w-event__side">{{ side.name }}</h1>
+      <p class="w-event__time">{{ side.time }}</p>
+      <p>
+        <i>{{ side.lunarTime }}</i>
+      </p>
+      <p class="w-event__address">
+        {{ side.address }}
+      </p>
+      <hr v-if="index !== sides.length - 1" />
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   layout: "wedding",
+
+  data() {
+    return {
+      sides: [
+        {
+          name: "NHÀ NỮ",
+          time: "11:00 Thứ Bảy, Ngày 17 Tháng 12 Năm 2022",
+          lunarTime: "(nhằm ngày 2 - 12 năm Nhâm Dần)",
+          address:
+            "Nhà Văn Hóa Thôn Pháp Kệ, Xã Quảng Phương, Huyện Quảng Trạch, Tỉnh Quảng Bình",
+        },
+        {
+          name: "NHÀ NAM",
+          time: "11:00 Thứ Bảy, Ngày 24 Tháng 12 Năm 2022",
+          lunarTime: "(nhằm ngày 2 - 12 năm Nhâm Dần)",
+          address:
+            "Nhà Văn Hóa Thôn Pháp Kệ, Xã Quảng Phương, Huyện Quảng Trạch, Tỉnh Quảng Bình",
+        },
+      ],
+    };
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+.w-event {
+  text-align: center;
+  margin-top: 48px;
+
+  &__side {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  &__time {
+    font-size: 24px;
+  }
+
+  &__address {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+}
+</style>
