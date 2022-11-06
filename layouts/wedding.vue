@@ -14,6 +14,15 @@ import MainMenu from "~/components/wedding/main-menu.vue";
 
 export default {
   components: { MainMenu, Headline },
+
+  head() {
+    return {
+      title: "Tuấn & Quyên",
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/wedding_favicon.ico" },
+      ],
+    };
+  },
 };
 </script>
 
