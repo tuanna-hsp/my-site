@@ -1,10 +1,34 @@
 <template>
   <div v-if="$vuetify.breakpoint.mobile" class="w-mobile-menu">
-    <div class="w-mobile-menu__button-wrapper">
+    <div class="w-mobile-menu__button-wrapper" @click="toggleMobileNav">
       <button class="w-mobile-menu__button">
-        <span class="w-mobile-menu__button-inner" />
+        <span
+          class="w-mobile-menu__button-inner"
+          :class="{ 'w-mobile-menu__button-inner--open': isMobileNavOpen }"
+        />
       </button>
     </div>
+
+    <nav
+      role="navigation"
+      class="w-mobile-menu__nav"
+      :class="{ 'w-mobile-menu__nav--open': isMobileNavOpen }"
+    >
+      <div class="w-mobile-menu__nav-content">
+        <ul class="w-mobile-menu__nav-list">
+          <li
+            class="w-mobile-menu__nav-item"
+            :class="{
+              'w-mobile-menu__nav-item--active': item.to === $route.path,
+            }"
+            v-for="item in items"
+            :key="item.to"
+          >
+            <nuxt-link :to="item.to" @click.native="goToPage(item.to)">{{ item.name }}</nuxt-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
   <div v-else class="w-menu">
@@ -24,6 +48,7 @@
 export default {
   data() {
     return {
+      isMobileNavOpen: false,
       items: [
         {
           name: "Đám cưới",
@@ -43,6 +68,17 @@ export default {
         },
       ],
     };
+  },
+
+  methods: {
+    toggleMobileNav() {
+      this.isMobileNavOpen = !this.isMobileNavOpen;
+    },
+
+    goToPage(path) {
+      this.$router.push(path);
+      this.isMobileNavOpen = false;
+    }
   },
 };
 </script>
@@ -102,6 +138,90 @@ export default {
       width: 24px;
       background: #62646f;
       box-shadow: 0 -10px 0 0 #62646f, 0 10px 0 0 #62646f;
+    }
+
+    &--open {
+      &::before {
+        transform: rotateZ(-45deg);
+      }
+
+      &::after {
+        transform: rotateZ(45deg);
+      }
+
+      &::before,
+      &::after {
+        box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+          rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+        margin: -0.15em auto 0px;
+        position: absolute;
+        transition: all 0.4s ease 0s;
+      }
+    }
+  }
+
+  &__nav {
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 18;
+    height: 0;
+    background-color: #fff7f2;
+
+    &--open {
+      left: 0px;
+      overflow: hidden;
+      position: fixed;
+      top: 0px;
+      transition: all 0.5s ease 0s;
+      width: 100%;
+      z-index: 18;
+      height: 100%;
+    }
+  }
+
+  &__nav-content {
+    padding-top: 56px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  &__nav-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-item {
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+
+    > a {
+      border-bottom: none;
+      padding: 4px;
+    }
+
+    &--active {
+      > a {
+        border-bottom: 2px solid #62646f;
+      }
     }
   }
 }
