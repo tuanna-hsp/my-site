@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-img src="/images/wedding-cover.jpeg" />
+    <v-img aspect-ratio="2" src="/images/wedding-cover.jpeg" />
     <div v-for="(side, index) in sides" :key="side.name" class="w-event">
       <h1 class="w-event__side">{{ side.name }}</h1>
       <p class="w-event__time">{{ side.time }}</p>

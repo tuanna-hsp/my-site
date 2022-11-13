@@ -120,6 +120,7 @@ export default {
     padding: 8px;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
+    border-bottom: none;
 
     &--active {
       border-bottom: 2px solid #62646f;

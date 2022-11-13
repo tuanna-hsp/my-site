@@ -1,11 +1,11 @@
 <template>
-  <div class="w-layout">
+  <v-app class="w-layout">
     <div class="w-content">
       <headline />
       <main-menu />
       <nuxt class="w-page" />
     </div>
-  </div>
+  </v-app>
 </template>
 
 <script>
