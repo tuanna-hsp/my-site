@@ -24,10 +24,10 @@ export default {
       sides: [
         {
           name: "NHÀ NỮ",
-          time: "11:00 Thứ Bảy, Ngày 17 Tháng 12 Năm 2022",
-          lunarTime: "(nhằm ngày 2 - 12 năm Nhâm Dần)",
+          time: "17:30 Thứ Bảy, Ngày 17 Tháng 12 Năm 2022",
+          lunarTime: "(nhằm ngày 24 - 11 năm Nhâm Dần)",
           address:
-            "Nhà Văn Hóa Thôn Pháp Kệ, Xã Quảng Phương, Huyện Quảng Trạch, Tỉnh Quảng Bình",
+            "Khách Sạn Sammy, Số 01 Lê Hồng Phong, Phường 4 Tp.Đà Lạt, Tỉnh Lâm Đồng",
         },
         {
           name: "NHÀ NAM",
