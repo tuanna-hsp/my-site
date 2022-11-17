@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <v-img aspect-ratio="2" src="/images/wedding-cover.jpeg" />
+  <v-container>
+    <img class="w-cover" src="/images/wedding-cover.jpeg" />
+
     <div v-for="(side, index) in sides" :key="side.name" class="w-event">
       <h1 class="w-event__side">{{ side.name }}</h1>
       <p class="w-event__time">{{ side.time }}</p>
@@ -12,7 +13,7 @@
       </p>
       <hr v-if="index !== sides.length - 1" />
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -61,5 +62,10 @@ export default {
     margin-top: 16px;
     margin-bottom: 48px;
   }
+}
+
+.w-cover {
+  max-width: 100%;
+  height: auto;
 }
 </style>
