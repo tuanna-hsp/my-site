@@ -77,16 +77,16 @@ export default {
 }
 
 ::v-deep .v-timeline-item__dot {
-  width: 16px;
-  height: 16px;
-  box-shadow: none;
+  width: 16px !important;
+  height: 16px !important;
+  box-shadow: none !important;
   background-color: #fff7f2 !important;
 }
 
 ::v-deep .v-timeline-item__inner-dot {
-  width: 8px;
-  height: 8px;
-  margin: 4px;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 4px !important;
   background-color: black !important;
 }
 
