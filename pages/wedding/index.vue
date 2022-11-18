@@ -47,6 +47,7 @@ export default {
 .w-event {
   text-align: center;
   margin-top: 48px;
+  padding: 0 16px;
 
   &__side {
     font-size: 28px;

@@ -3,7 +3,10 @@
     <div class="w-content">
       <headline />
       <main-menu />
-      <nuxt class="w-page" />
+      <nuxt
+        class="w-page"
+        :class="{ 'w-page--mobile': $vuetify.breakpoint.mobile }"
+      />
     </div>
   </v-app>
 </template>
@@ -46,5 +49,9 @@ export default {
 .w-page {
   padding: 32px 16px;
   width: 100%;
+
+  &--mobile {
+    padding: 58px 0 0 0;
+  }
 }
 </style>

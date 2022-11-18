@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-timeline>
-      <v-timeline-item v-for="(item, index) in storyItems" :key="index">
+      <v-timeline-item v-for="(item, index) in storyItems" :key="index" small>
         <template v-slot:opposite>
           <div class="py-4">
             <h2 class="w-timeline__date">
@@ -87,7 +87,7 @@ export default {
   width: 8px;
   height: 8px;
   margin: 4px;
-  background-color: black;
+  background-color: black !important;
 }
 
 .w-timeline {
