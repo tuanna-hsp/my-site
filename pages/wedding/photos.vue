@@ -1,11 +1,18 @@
 <template>
-  <v-container>
-    <v-row class="w-album__row" v-for="(row, index) in albumRows" :key="index">
-      <v-col cols="12" sm="6" v-for="album in row" :key="album.name">
+  <v-container fluid>
+    <v-row
+      class="w-album__row"
+      v-for="(row, index) in albumRows"
+      :key="index"
+      no-gutters
+    >
+      <v-col cols="12" sm="6" v-for="(album, index) in row" :key="album.name">
         <div
           class="w-album__cover-wrapper"
           :class="{
             'w-album__cover-wrapper--mobile': $vuetify.breakpoint.mobile,
+            'w-album__cover-wrapper--left': index % 2 === 0,
+            'w-album__cover-wrapper--right': index % 2 === 1,
           }"
         >
           <img
@@ -130,6 +137,14 @@ export default {
 
   &__cover-wrapper {
     cursor: pointer;
+
+    &--left {
+      padding-right: 16px;
+    }
+
+    &--right {
+      padding-left: 16px;
+    }
 
     &--mobile {
       padding-left: 16px;
