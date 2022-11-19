@@ -38,7 +38,10 @@
     <nuxt-link
       v-for="item in items"
       class="w-menu__item"
-      :class="{ 'w-menu__item--active': item.to === $route.path }"
+      :class="{
+        'w-menu__item--active':
+          item.to === $route.path || $route.path === `${item.to}/`,
+      }"
       :key="item.to"
       :to="item.to"
     >
