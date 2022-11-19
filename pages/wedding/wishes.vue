@@ -1,5 +1,5 @@
 <template>
-  <div class="w-wish" :class="{ 'w-wish--mobile': $vuetify.breakpoint.mobile }">
+  <div class="w-wish">
     <v-text-field v-model="form.name" color="grey darken-3" label="Tên" />
     <v-textarea
       v-model="form.message"
@@ -113,11 +113,8 @@ export default {
 <style lang="scss" scoped>
 .w-wish {
   max-width: 600px;
-
-  &--mobile {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .w-comment-list {
