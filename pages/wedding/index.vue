@@ -1,6 +1,10 @@
 <template>
   <v-container>
-    <img class="w-cover" src="/images/wedding-cover.png" />
+    <img
+      class="w-cover"
+      :class="{ 'w-cover--mobile': $vuetify.breakpoint.mobile }"
+      src="/images/wedding-cover.png"
+    />
 
     <div v-for="(side, index) in sides" :key="side.name" class="w-event">
       <h1 class="w-event__side">{{ side.name }}</h1>
@@ -68,5 +72,10 @@ export default {
 .w-cover {
   max-width: 100%;
   height: auto;
+
+  &--mobile {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 </style>
