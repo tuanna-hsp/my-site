@@ -24,7 +24,9 @@
             v-for="item in items"
             :key="item.to"
           >
-            <nuxt-link :to="item.to" @click.native="goToPage(item.to)">{{ item.name }}</nuxt-link>
+            <nuxt-link :to="item.to" @click.native="goToPage(item.to)">{{
+              item.name
+            }}</nuxt-link>
           </li>
         </ul>
       </div>
@@ -78,7 +80,7 @@ export default {
     goToPage(path) {
       this.$router.push(path);
       this.isMobileNavOpen = false;
-    }
+    },
   },
 };
 </script>
@@ -243,11 +245,11 @@ export default {
     border-bottom: none;
 
     &--active {
-      border-bottom: 2px solid #62646f;
+      border-bottom: 2px solid #62646f !important;
     }
 
     &:hover {
-      border-bottom: 2px solid rgba(98, 100, 111, 70%);
+      border-bottom: 2px solid rgba(98, 100, 111, 70%) !important;
     }
 
     & + & {

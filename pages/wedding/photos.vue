@@ -1,9 +1,10 @@
 <template>
   <v-container>
     <v-row class="w-album__row" v-for="(row, index) in albumRows" :key="index">
-      <v-col cols="6" v-for="album in row" :key="album.name">
+      <v-col cols="12" sm="6" v-for="album in row" :key="album.name">
         <v-img
           class="w-album__cover"
+          :class="{ 'w-album__cover--mobile': $vuetify.breakpoint.mobile }"
           :src="album.coverPhoto"
           @click.stop="showAlbum(album)"
         />
@@ -16,7 +17,7 @@
       <v-carousel
         cycle
         hide-delimiter-background
-        height="720px"
+        :height="$vuetify.breakpoint.mobile ? null : '720px'"
         v-if="shownAlbum"
       >
         <v-carousel-item v-for="(photo, i) in shownAlbum.photos" :key="i">
@@ -124,6 +125,11 @@ export default {
   &__cover {
     border-radius: 4px;
     cursor: pointer;
+
+    &--mobile {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
   }
 }
 </style>
