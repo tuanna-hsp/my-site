@@ -54,7 +54,7 @@ export default {
   padding-bottom: 32px;
 
   &--mobile {
-    max-width: 100%;
+    width: 100%;
   }
 }
 

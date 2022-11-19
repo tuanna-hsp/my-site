@@ -2,12 +2,18 @@
   <v-container>
     <v-row class="w-album__row" v-for="(row, index) in albumRows" :key="index">
       <v-col cols="12" sm="6" v-for="album in row" :key="album.name">
-        <v-img
-          class="w-album__cover"
-          :class="{ 'w-album__cover--mobile': $vuetify.breakpoint.mobile }"
-          :src="album.coverPhoto"
-          @click.stop="showAlbum(album)"
-        />
+        <div
+          class="w-album__cover-wrapper"
+          :class="{
+            'w-album__cover-wrapper--mobile': $vuetify.breakpoint.mobile,
+          }"
+        >
+          <img
+            class="w-album__cover"
+            :src="album.coverPhoto"
+            @click.stop="showAlbum(album)"
+          />
+        </div>
         <h2 class="w-album__title">{{ album.name }}</h2>
         <p class="w-album__subtitle">{{ album.photos.length }} ảnh</p>
       </v-col>
@@ -122,14 +128,18 @@ export default {
     text-align: center;
   }
 
-  &__cover {
-    border-radius: 4px;
+  &__cover-wrapper {
     cursor: pointer;
 
     &--mobile {
-      margin-left: 16px;
-      margin-right: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
+  }
+
+  &__cover {
+    width: 100%;
+    border-radius: 4px;
   }
 }
 </style>

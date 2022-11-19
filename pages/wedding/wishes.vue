@@ -72,7 +72,11 @@ export default {
     },
 
     async fetchWishes() {
-      this.wishes = await this.$axios.$get(API_URL);
+      const response = await fetch(API_URL, {
+        redirect: "follow",
+        method: "GET",
+      });
+      this.wishes = await response.json();
     },
 
     async send() {
@@ -115,7 +119,10 @@ export default {
     padding-right: 16px;
   }
 }
+
 .w-comment-list {
   margin-top: 60px;
+  min-height: 10px;
+  width: 100%;
 }
 </style>
