@@ -48,6 +48,8 @@ export default {};
   width: 100%;
   background-color: #fff7f2;
   position: fixed;
+  top: 0;
+  z-index: 10;
 
   &__name-wrapper {
     display: flex;

@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <v-timeline>
+  <v-container>
+    <v-timeline
+      :dense="$vuetify.breakpoint.mobile"
+      :align-top="$vuetify.breakpoint.mobile"
+      class="w-timeline"
+      :class="{ 'w-timeline--mobile': $vuetify.breakpoint.mobile }"
+    >
       <v-timeline-item v-for="(item, index) in storyItems" :key="index" small>
         <template v-slot:opposite>
           <div class="py-4">
@@ -12,12 +17,31 @@
             </div>
           </div>
         </template>
-        <div class="w-timeline__image">
-          <v-img :src="item.imageUrl" />
+        <div
+          class="w-timeline__body"
+          :class="{
+            'w-timeline__body--mobile': $vuetify.breakpoint.mobile,
+          }"
+        >
+          <v-img class="w-timeline__image" :src="item.imageUrl" />
+
+          <template v-if="$vuetify.breakpoint.mobile">
+            <h2 class="w-timeline__date">
+              {{ item.date }}
+            </h2>
+            <div
+              class="w-timeline__text"
+              :class="{
+                'w-timeline__text--mobile': $vuetify.breakpoint.mobile,
+              }"
+            >
+              {{ item.text }}
+            </div>
+          </template>
         </div>
       </v-timeline-item>
     </v-timeline>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -70,12 +94,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-::v-deep .v-timeline::before {
-  background: none;
-  left: 50%;
-  border-left: 1px dashed rgb(35, 31, 32);
-}
-
 ::v-deep .v-timeline-item__dot {
   width: 16px !important;
   height: 16px !important;
@@ -91,18 +109,55 @@ export default {
 }
 
 .w-timeline {
-  &__image {
+  &::before {
+    background: none !important;
+    left: 50%;
+    border-left: 1px dashed rgb(35, 31, 32) !important;
+  }
+
+  &--mobile {
+    &::before {
+      background: none;
+      left: 16px !important;
+      border-left: 1px dashed rgb(35, 31, 32);
+    }
+
+    ::v-deep .v-timeline-item__body {
+      max-width: calc(100% - 32px);
+      padding-right: 16px;
+    }
+
+    ::v-deep .v-timeline-item__divider {
+      min-width: 32px;
+    }
+  }
+
+  &__body {
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &--mobile {
+      padding-top: 0;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__image {
+    border-radius: 4px;
   }
 
   &__date {
     font-size: 22px;
     letter-spacing: 2px;
+    margin-top: 8px;
   }
 
   &__text {
     letter-spacing: 1px;
+
+    &--mobile {
+      letter-spacing: 0;
+    }
   }
 }
 </style>

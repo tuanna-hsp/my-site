@@ -1,6 +1,9 @@
 <template>
   <v-app class="w-layout">
-    <div class="w-content">
+    <div
+      class="w-content"
+      :class="{ 'w-content--mobile': $vuetify.breakpoint.mobile }"
+    >
       <headline />
       <main-menu />
       <nuxt
@@ -44,6 +47,10 @@ export default {
   align-items: center;
   background-color: #fff7f2;
   padding-bottom: 32px;
+
+  &--mobile {
+    max-width: 100%;
+  }
 }
 
 .w-page {
