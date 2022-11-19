@@ -19,7 +19,8 @@
           <li
             class="w-mobile-menu__nav-item"
             :class="{
-              'w-mobile-menu__nav-item--active': item.to === $route.path,
+              'w-mobile-menu__nav-item--active':
+                $route.path === item.to || $route.path === `${item.to}/`,
             }"
             v-for="item in items"
             :key="item.to"
