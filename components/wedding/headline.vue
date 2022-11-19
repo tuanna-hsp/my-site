@@ -23,7 +23,7 @@ export default {};
 <style lang="scss" scoped>
 .w-headline {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   &__name-wrapper {
     display: flex;

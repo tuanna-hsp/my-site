@@ -55,37 +55,37 @@ export default {
           date: "15 THÁNG 6, 2019",
           text:
             "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/wedding-cover.jpeg",
+          imageUrl: "/images/sample.jpeg",
         },
         {
           date: "15 THÁNG 6, 2019",
           text:
             "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/wedding-cover.jpeg",
+          imageUrl: "/images/sample.jpeg",
         },
         {
           date: "15 THÁNG 6, 2019",
           text:
             "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/wedding-cover.jpeg",
+          imageUrl: "/images/sample.jpeg",
         },
         {
           date: "15 THÁNG 6, 2019",
           text:
             "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/wedding-cover.jpeg",
+          imageUrl: "/images/sample.jpeg",
         },
         {
           date: "15 THÁNG 6, 2019",
           text:
             "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/wedding-cover.jpeg",
+          imageUrl: "/images/sample.jpeg",
         },
         {
           date: "15 THÁNG 6, 2019",
           text:
             "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/wedding-cover.jpeg",
+          imageUrl: "/images/sample.jpeg",
         },
       ],
     };

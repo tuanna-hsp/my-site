@@ -4,6 +4,11 @@
       class="w-content"
       :class="{ 'w-content--mobile': $vuetify.breakpoint.mobile }"
     >
+      <template v-if="!$vuetify.breakpoint.mobile">
+        <v-img width="300" class="w-bg__left" src="/images/flower2-up.png" />
+        <v-img width="300" class="w-bg__right" src="/images/flower2-down.png" />
+      </template>
+
       <headline />
       <main-menu />
       <nuxt
@@ -40,7 +45,7 @@ export default {
 }
 
 .w-content {
-  margin: auto;
+  margin: 0 auto;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -54,11 +59,25 @@ export default {
 }
 
 .w-page {
-  padding: 32px 16px;
+  padding: 32px 0px;
   width: 100%;
+  z-index: 1;
+  background-color: #fff7f2;
 
   &--mobile {
     padding: 58px 0 0 0;
   }
+}
+
+.w-bg__left {
+  position: fixed;
+  top: 250px;
+  left: calc((100vw - 1000px) / 2 - 200px);
+}
+
+.w-bg__right {
+  position: fixed;
+  top: 450px;
+  right: calc((100vw - 1000px) / 2 - 200px);
 }
 </style>

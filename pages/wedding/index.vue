@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <img class="w-cover" src="/images/wedding-cover.jpeg" />
+    <img class="w-cover" src="/images/wedding-cover.png" />
 
     <div v-for="(side, index) in sides" :key="side.name" class="w-event">
       <h1 class="w-event__side">{{ side.name }}</h1>
