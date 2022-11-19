@@ -47,7 +47,7 @@ export default {
       albums: [
         {
           name: "Summer",
-          coverPhoto: "http://localhost:3000/images/sample.jpeg",
+          coverPhoto: "/images/sample.jpeg",
           photos: [
             "/images/sample.jpeg",
             "/images/sample.jpeg",
