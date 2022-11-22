@@ -1,6 +1,6 @@
 <template>
   <div class="w-wish">
-    <v-text-field v-model="form.name" color="grey darken-3" label="Tên" />
+    <v-text-field v-model="form.name" color="grey darken-3" label="Người gửi" />
     <v-textarea
       v-model="form.message"
       label="Lời chúc"
@@ -13,7 +13,7 @@
       :disabled="!formValid"
       @click="confirmSend"
     >
-      <v-icon small class="mr-2">mdi-heart</v-icon>Gửi lời chúc
+      <v-icon small class="mr-2">mdi-heart</v-icon>Gửi
     </v-btn>
 
     <div class="w-comment-list">
@@ -25,10 +25,10 @@
 
     <v-dialog v-model="sendConfirmation" persistent max-width="290">
       <v-card>
-        <v-card-title>Xác nhận</v-card-title>
+        <v-card-title>Xác Nhận</v-card-title>
         <v-card-text>Gửi lời chúc cho Tuấn & Quyên?</v-card-text>
         <v-card-actions>
-          <v-btn text @click="sendConfirmation = false"> Để sửa lại đã </v-btn>
+          <v-btn text @click="sendConfirmation = false"> Sửa thêm chút </v-btn>
           <v-spacer></v-spacer>
           <v-btn text @click="send"> Gửi luôn </v-btn>
         </v-card-actions>

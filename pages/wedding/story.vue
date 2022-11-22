@@ -12,9 +12,7 @@
             <h2 class="w-timeline__date">
               {{ item.date }}
             </h2>
-            <div class="w-timeline__text">
-              {{ item.text }}
-            </div>
+            <div class="w-timeline__text" v-html="item.text" />
           </div>
         </template>
         <div
@@ -26,7 +24,12 @@
           <v-img class="w-timeline__image" :src="item.imageUrl" />
 
           <template v-if="$vuetify.breakpoint.mobile">
-            <h2 class="w-timeline__date">
+            <h2
+              class="w-timeline__date"
+              :class="{
+                'w-timeline__date--mobile': $vuetify.breakpoint.mobile,
+              }"
+            >
               {{ item.date }}
             </h2>
             <div
@@ -34,9 +37,8 @@
               :class="{
                 'w-timeline__text--mobile': $vuetify.breakpoint.mobile,
               }"
-            >
-              {{ item.text }}
-            </div>
+              v-html="item.text"
+            />
           </template>
         </div>
       </v-timeline-item>
@@ -52,40 +54,69 @@ export default {
     return {
       storyItems: [
         {
-          date: "15 THÁNG 6, 2019",
-          text:
-            "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+          date: "06/04/2018 - Ấn tượng đầu",
+          text: `
+Bọn mình gặp mặt lần đầu tại một sự kiện của hội người Việt tại Nhật.<br/>
+Cô Dâu: “<i>Trời. Bạn này giống Lương Xuân Trường quá vậy.</i>” (Nhưng ko đẹp trai bằng 🙄)<br/>
+Chú Rể: <i>Chả có ấn tượng gì 🙈</i> (chắc còn bận chụp ảnh với fan)<br/>
+Sau event đó chúng mình có gặp nhau 1, 2 lần khi tham gia chung sự kiện nhưng không trò chuyện nhiều và cũng không có ấn tượng gì sâu sắc khác 🤣`,
+          imageUrl: "/images/story/first_time.jpeg",
+        },
+        {
+          date: "15/03/2019 - Hữu duyên thiên lý",
+          text: `
+Chúng mình gặp lại và đi chơi chung một cách tình cờ. Sau lần đó chúng mình có trò chuyện nhiều hơn, gặp nhiều hơn vì phát hiện ra nhà Chú Rể nằm trên đường về nhà Cô Dâu (cách nhau 7’ đi tàu).<br/>
+Nhưng thực ra lý do chính dẫn đến mối lương duyên này lại là con đường khác… đường ăn uống: Cô Dâu thường đi làm về trễ nên hay ghé nhà Chú Rể ăn cơm ké 🤤.<br/>
+P/S: Ông bà nói cấm có sai <i>Nhất cự ly, nhì tốc độ</i> 😄`,
           imageUrl: "/images/sample.jpeg",
         },
         {
-          date: "15 THÁNG 6, 2019",
-          text:
-            "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/sample.jpeg",
+          date: "15/06/2019 - Chính thức hẹn hò",
+          text: `
+Vào một ngày đẹp trời sau khi tá túc cơm nước chơi bời ở nhà Chú Rể, Chú Rể cưỡi chiếc xe đạp không có yên sau chở Cô Dâu vắt vẻo trên ghi đông 😵‍💫, đạp phòi cơm suốt 3km để đưa Cô Dâu về nhà. Thành quả là Chú Rể cuối cùng cũng dám mở lời “ Tuấn thích Xu”<br/>
+Cô Dâu: <i>Ahihi 🤣</i><br/>
+Chú Rể: <i>(Chở vầy may mà không bị công an bắt, không là hết tỏ tình 😂)</i><br/>
+Và sau đó là những chuỗi ngày hẹn hò. Mọi người xem <a href="/wedding/photos">album ảnh</a> về những nơi chúng mình đã đi qua nha!
+`,
+          imageUrl: "/images/story/date.jpg",
         },
         {
-          date: "15 THÁNG 6, 2019",
-          text:
-            "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/sample.jpeg",
+          date: "01/04/2020 - Về chung một nhà",
+          text: `
+            Chúng mình đã quyết định làm mọi thứ cùng nhau mỗi ngày 🥰.<br/>
+Chú Rể: <i>Chuyển sang nhà Cô Dâu ở nên từ đó không dám manh động nữa, không là bị cho ra đường như chơi 😆</i>
+            `,
+          imageUrl: "/images/story/new_home.jpg",
         },
         {
-          date: "15 THÁNG 6, 2019",
-          text:
-            "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/sample.jpeg",
+          date: "14/2/2021 - Diamond Valentine",
+          text: `Cô Dâu đồng ý rước Chú Rể về làm chồng❤️<br/>
+Chú Rể: <i>Xu cưới anh nha?</i><br/>
+Cô Dâu (nghĩ bụng): 🙄 <i>ủa là mình phải đi rước rể?</i>🤪`,
+          imageUrl: "/images/story/ring.jpg",
         },
         {
-          date: "15 THÁNG 6, 2019",
-          text:
-            "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/sample.jpeg",
+          date: "30/4/2021 - Bút sa…",
+          text: `Chúng mình ký hiệp ước giải phóng hoàn toàn chế độ độc thân ❤️`,
+          imageUrl: "/images/story/married.jpg",
         },
         {
-          date: "15 THÁNG 6, 2019",
-          text:
-            "n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-          imageUrl: "/images/sample.jpeg",
+          date: "29/07/2021 - New life begins",
+          text: `Chúng mình quyết định để lại bằng chứng cho mối duyên vợ chồng 🐯❤️`,
+          imageUrl: "/images/story/new_life.jpg",
+        },
+        {
+          date: "06/04/2022 - An-chan",
+          text: `Minh chứng cho sự gắn kết của chúng mình ra đời 👨‍👩‍👧❤️`,
+          imageUrl: "/images/story/tora.jpg",
+        },
+        {
+          date: "17/12/2022 & 24/12/2022 - Hôn Lễ",
+          text: `Người tính không bằng trời tính. Lễ cưới đến muộn sau đại dịch với nhiều hạnh phúc to lớn hơn ❤️<br/>
+Mọi người hãy đến chung vui và chúc phúc cho chúng mình nha.<br/>
+Đừng quên để lại lời chúc <a href="/wedding/wishes">tại đây nha</a> 🥰<br/>
+Cám ơn mọi người đã đọc! Cảm ơn Gia Đình, Họ Hàng, Bạn Bè và tất cả những ai vẫn luôn theo dõi và quan tâm chúng mình❤️`,
+          imageUrl: "/images/story/married.jpg",
         },
       ],
     };
@@ -150,13 +181,25 @@ export default {
     font-size: 22px;
     letter-spacing: 2px;
     margin-top: 8px;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &--mobile {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 18px;
+    }
   }
 
   &__text {
-    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &--mobile {
-      letter-spacing: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
