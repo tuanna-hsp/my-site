@@ -30,10 +30,14 @@
       <v-carousel
         hide-delimiter-background
         hide-delimiters
+        v-model="slideItem"
         :height="$vuetify.breakpoint.mobile ? null : '720px'"
         v-if="shownAlbum"
       >
-        <v-carousel-item v-for="(photo, i) in shownAlbum.photos" :key="i">
+        <v-carousel-item
+          v-for="(photo, i) in shownAlbum.photos"
+          :key="`${shownAlbum.name}${i}`"
+        >
           <v-sheet height="100%">
             <video width="100%" v-if="photo.includes('.mov')" controls>
               <source :src="photo" type="video/mp4" />
@@ -54,6 +58,7 @@ export default {
     return {
       shownAlbum: null,
       isAlbumShown: false,
+      slideItem: 0,
       albums: [
         {
           name: "Xuân",
@@ -144,6 +149,14 @@ export default {
       }
 
       return rows;
+    },
+  },
+
+  watch: {
+    isAlbumShown(value) {
+      if (!value) {
+        this.slideItem = 0;
+      }
     },
   },
 
