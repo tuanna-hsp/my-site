@@ -28,14 +28,17 @@
 
     <v-dialog class="w-album__dialog" v-model="isAlbumShown" max-width="1280px">
       <v-carousel
-        cycle
         hide-delimiter-background
+        hide-delimiters
         :height="$vuetify.breakpoint.mobile ? null : '720px'"
         v-if="shownAlbum"
       >
         <v-carousel-item v-for="(photo, i) in shownAlbum.photos" :key="i">
           <v-sheet height="100%">
-            <v-img :src="photo" />
+            <video width="100%" v-if="photo.includes('.mov')" controls>
+              <source :src="photo" type="video/mp4" />
+            </video>
+            <v-img v-else contain :src="photo" height="100%" />
           </v-sheet>
         </v-carousel-item>
       </v-carousel>
@@ -53,43 +56,76 @@ export default {
       isAlbumShown: false,
       albums: [
         {
-          name: "Summer",
-          coverPhoto: "/images/sample.jpeg",
+          name: "Xuân",
+          coverPhoto: "/images/albums/spring/cover.jpg",
           photos: [
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
+            "/images/albums/spring/IMG_0020.JPG",
+            "/images/albums/spring/IMG_0021.JPG",
+            "/images/albums/spring/IMG_0022.JPG",
+            "/images/albums/spring/IMG_0023.JPG",
+            "/images/albums/spring/IMG_0024.JPG",
+            "/images/albums/spring/IMG_0025.JPG",
+            "/images/albums/spring/IMG_0026.JPG",
+            "/images/albums/spring/IMG_0027.JPG",
+            "/images/albums/spring/IMG_0029.JPG",
+            "/images/albums/spring/IMG_0030.JPG",
+            "/images/albums/spring/IMG_0031.JPG",
+            "/images/albums/spring/IMG_0032.JPG",
           ],
         },
         {
-          name: "Spring",
-          coverPhoto: "/images/sample.jpeg",
+          name: "Hạ",
+          coverPhoto: "/images/albums/summer/cover.jpg",
           photos: [
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
+            "/images/albums/summer/IMG_0016.JPG",
+            "/images/albums/summer/IMG_0017.JPG",
+            "/images/albums/summer/IMG_0018.JPG",
+            "/images/albums/summer/IMG_0019.JPG",
+            "/images/albums/summer/IMG_0020.JPG",
+            "/images/albums/summer/IMG_0021.JPG",
+            "/images/albums/summer/IMG_0022.JPG",
+            "/images/albums/summer/IMG_0023.JPG",
+            "/images/albums/summer/IMG_0024.JPG",
+            "/images/albums/summer/IMG_0025.JPG",
+            "/images/albums/summer/IMG_0027.JPG",
+            "/images/albums/summer/IMG_0026.mov",
           ],
         },
         {
-          name: "Winter",
-          coverPhoto: "/images/sample.jpeg",
+          name: "Thu",
+          coverPhoto: "/images/albums/autumn/cover.jpg",
           photos: [
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
+            "/images/albums/autumn/IMG_0001.JPG",
+            "/images/albums/autumn/IMG_0002.JPG",
+            "/images/albums/autumn/IMG_0003.JPG",
+            "/images/albums/autumn/IMG_0004.JPG",
+            "/images/albums/autumn/IMG_0005.JPG",
+            "/images/albums/autumn/IMG_0006.JPG",
+            "/images/albums/autumn/IMG_0007.JPG",
+            "/images/albums/autumn/IMG_0008.JPG",
+            "/images/albums/autumn/IMG_0009.JPG",
+            "/images/albums/autumn/IMG_0010.mov",
+            "/images/albums/autumn/IMG_0011.mov",
+            "/images/albums/autumn/IMG_0012.mov",
+            "/images/albums/autumn/IMG_0013.mov",
           ],
         },
         {
-          name: "Autumn",
-          coverPhoto: "/images/sample.jpeg",
+          name: "Đông",
+          coverPhoto: "/images/albums/winter/cover.jpg",
           photos: [
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
-            "/images/sample.jpeg",
+            "/images/albums/winter/IMG_0021.JPG",
+            "/images/albums/winter/IMG_0022.JPG",
+            "/images/albums/winter/IMG_0023.JPG",
+            "/images/albums/winter/IMG_0024.JPG",
+            "/images/albums/winter/IMG_0025.JPG",
+            "/images/albums/winter/IMG_0026.JPG",
+            "/images/albums/winter/IMG_0027.JPG",
+            "/images/albums/winter/IMG_0028.JPG",
+            "/images/albums/winter/IMG_0029.JPG",
+            "/images/albums/winter/IMG_0030.JPG",
+            "/images/albums/winter/IMG_0031.JPG",
+            "/images/albums/winter/IMG_0032.mov",
           ],
         },
       ],
