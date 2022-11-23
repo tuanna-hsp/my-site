@@ -54,13 +54,14 @@ export default {
     return {
       storyItems: [
         {
-          date: "06/04/2018 - Ấn tượng đầu",
+          date: "06/04/2018 - Lần đầu gặp gỡ",
           text: `
 Bọn mình gặp mặt lần đầu tại một sự kiện của hội người Việt tại Nhật.<br/>
+Ấn tượng đầu với đối phương:<br/>
 Cô Dâu: “<i>Trời. Bạn này giống Lương Xuân Trường quá vậy.</i>” (Nhưng ko đẹp trai bằng 🙄)<br/>
 Chú Rể: <i>Chả có ấn tượng gì 🙈</i> (chắc còn bận chụp ảnh với fan)<br/>
 Sau event đó chúng mình có gặp nhau 1, 2 lần khi tham gia chung sự kiện nhưng không trò chuyện nhiều và cũng không có ấn tượng gì sâu sắc khác 🤣`,
-          imageUrl: "/images/story/first_time.jpeg",
+          imageUrl: "/images/story/first_time.jpg",
         },
         {
           date: "15/03/2019 - Hữu duyên thiên lý",
@@ -68,7 +69,7 @@ Sau event đó chúng mình có gặp nhau 1, 2 lần khi tham gia chung sự ki
 Chúng mình gặp lại và đi chơi chung một cách tình cờ. Sau lần đó chúng mình có trò chuyện nhiều hơn, gặp nhiều hơn vì phát hiện ra nhà Chú Rể nằm trên đường về nhà Cô Dâu (cách nhau 7’ đi tàu).<br/>
 Nhưng thực ra lý do chính dẫn đến mối lương duyên này lại là con đường khác… đường ăn uống: Cô Dâu thường đi làm về trễ nên hay ghé nhà Chú Rể ăn cơm ké 🤤.<br/>
 P/S: Ông bà nói cấm có sai <i>Nhất cự ly, nhì tốc độ</i> 😄`,
-          imageUrl: "/images/sample.jpeg",
+          imageUrl: "/images/story/food.jpg",
         },
         {
           date: "15/06/2019 - Chính thức hẹn hò",
@@ -116,7 +117,7 @@ Cô Dâu (nghĩ bụng): 🙄 <i>ủa là mình phải đi rước rể?</i>🤪
 Mọi người hãy đến chung vui và chúc phúc cho chúng mình nha.<br/>
 Đừng quên để lại lời chúc <a href="/wedding/wishes">tại đây nha</a> 🥰<br/>
 Cám ơn mọi người đã đọc! Cảm ơn Gia Đình, Họ Hàng, Bạn Bè và tất cả những ai vẫn luôn theo dõi và quan tâm chúng mình❤️`,
-          imageUrl: "/images/story/married.jpg",
+          imageUrl: "/images/story/wedding.jpeg",
         },
       ],
     };
