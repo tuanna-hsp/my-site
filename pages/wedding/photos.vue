@@ -39,7 +39,11 @@
           :key="`${shownAlbum.name}${i}`"
         >
           <v-sheet height="100%">
-            <video width="100%" v-if="photo.includes('.mov')" controls>
+            <video
+              v-if="photo.includes('.mov') || photo.includes('.mp4')"
+              width="100%"
+              controls
+            >
               <source :src="photo" type="video/mp4" />
             </video>
             <v-img v-else contain :src="photo" height="100%" />
@@ -64,6 +68,25 @@ export default {
           name: "Xuân",
           coverPhoto: "/images/albums/spring/cover.jpg",
           photos: [
+            "/images/albums/spring/IMG_0001.JPG",
+            "/images/albums/spring/IMG_0002.JPG",
+            "/images/albums/spring/IMG_0003.JPG",
+            "/images/albums/spring/IMG_0004.JPG",
+            "/images/albums/spring/IMG_0005.JPG",
+            "/images/albums/spring/IMG_0006.JPG",
+            "/images/albums/spring/IMG_0007.JPG",
+            "/images/albums/spring/IMG_0008.JPG",
+            "/images/albums/spring/IMG_0009.JPG",
+            "/images/albums/spring/IMG_0010.JPG",
+            "/images/albums/spring/IMG_0011.JPG",
+            "/images/albums/spring/IMG_0012.JPG",
+            "/images/albums/spring/IMG_0013.JPG",
+            "/images/albums/spring/IMG_0014.JPG",
+            "/images/albums/spring/IMG_0015.JPG",
+            "/images/albums/spring/IMG_0016.JPG",
+            "/images/albums/spring/IMG_0017.JPG",
+            "/images/albums/spring/IMG_0018.JPG",
+            "/images/albums/spring/IMG_0019.JPG",
             "/images/albums/spring/IMG_0020.JPG",
             "/images/albums/spring/IMG_0021.JPG",
             "/images/albums/spring/IMG_0022.JPG",
@@ -72,6 +95,7 @@ export default {
             "/images/albums/spring/IMG_0025.JPG",
             "/images/albums/spring/IMG_0026.JPG",
             "/images/albums/spring/IMG_0027.JPG",
+            "/images/albums/spring/IMG_0028.mov",
             "/images/albums/spring/IMG_0029.JPG",
             "/images/albums/spring/IMG_0030.JPG",
             "/images/albums/spring/IMG_0031.JPG",
@@ -82,6 +106,22 @@ export default {
           name: "Hạ",
           coverPhoto: "/images/albums/summer/cover.jpg",
           photos: [
+            "/images/albums/summer/IMG_0026.mov",
+            "/images/albums/summer/IMG_0001.JPG",
+            "/images/albums/summer/IMG_0002.JPG",
+            "/images/albums/summer/IMG_0003.JPG",
+            "/images/albums/summer/IMG_0004.JPG",
+            "/images/albums/summer/IMG_0005.JPG",
+            "/images/albums/summer/IMG_0006.JPG",
+            "/images/albums/summer/IMG_0007.JPG",
+            "/images/albums/summer/IMG_0008.JPG",
+            "/images/albums/summer/IMG_0009.JPG",
+            "/images/albums/summer/IMG_0010.JPG",
+            "/images/albums/summer/IMG_0011.JPG",
+            "/images/albums/summer/IMG_0012.JPG",
+            "/images/albums/summer/IMG_0013.mp4",
+            "/images/albums/summer/IMG_0014.JPG",
+            "/images/albums/summer/IMG_0015.JPG",
             "/images/albums/summer/IMG_0016.JPG",
             "/images/albums/summer/IMG_0017.JPG",
             "/images/albums/summer/IMG_0018.JPG",
@@ -93,7 +133,6 @@ export default {
             "/images/albums/summer/IMG_0024.JPG",
             "/images/albums/summer/IMG_0025.JPG",
             "/images/albums/summer/IMG_0027.JPG",
-            "/images/albums/summer/IMG_0026.mov",
           ],
         },
         {
@@ -119,6 +158,27 @@ export default {
           name: "Đông",
           coverPhoto: "/images/albums/winter/cover.jpg",
           photos: [
+            "/images/albums/winter/IMG_0032.mov",
+            "/images/albums/winter/IMG_0001.JPG",
+            "/images/albums/winter/IMG_0002.JPG",
+            "/images/albums/winter/IMG_0003.JPG",
+            "/images/albums/winter/IMG_0004.JPG",
+            "/images/albums/winter/IMG_0005.JPG",
+            "/images/albums/winter/IMG_0006.JPG",
+            "/images/albums/winter/IMG_0007.JPG",
+            "/images/albums/winter/IMG_0008.JPG",
+            "/images/albums/winter/IMG_0009.JPG",
+            "/images/albums/winter/IMG_0010.JPG",
+            "/images/albums/winter/IMG_0011.JPG",
+            "/images/albums/winter/IMG_0012.JPG",
+            "/images/albums/winter/IMG_0013.JPG",
+            "/images/albums/winter/IMG_0014.JPG",
+            "/images/albums/winter/IMG_0015.JPG",
+            "/images/albums/winter/IMG_0016.JPG",
+            "/images/albums/winter/IMG_0017.JPG",
+            "/images/albums/winter/IMG_0018.JPG",
+            "/images/albums/winter/IMG_0019.JPG",
+            "/images/albums/winter/IMG_0020.JPG",
             "/images/albums/winter/IMG_0021.JPG",
             "/images/albums/winter/IMG_0022.JPG",
             "/images/albums/winter/IMG_0023.JPG",
@@ -130,7 +190,6 @@ export default {
             "/images/albums/winter/IMG_0029.JPG",
             "/images/albums/winter/IMG_0030.JPG",
             "/images/albums/winter/IMG_0031.JPG",
-            "/images/albums/winter/IMG_0032.mov",
           ],
         },
       ],
