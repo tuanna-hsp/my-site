@@ -51,28 +51,30 @@
 </template>
 
 <script>
+export const MENU_ITEMS = [
+  {
+    name: "Đám cưới",
+    to: "/wedding",
+  },
+  {
+    name: "Chúc phúc",
+    to: "/wedding/wishes",
+  },
+  {
+    name: "Chuyện chúng mình",
+    to: "/wedding/story",
+  },
+  {
+    name: "Album ảnh",
+    to: "/wedding/photos",
+  },
+];
+
 export default {
   data() {
     return {
       isMobileNavOpen: false,
-      items: [
-        {
-          name: "Đám cưới",
-          to: "/wedding",
-        },
-        {
-          name: "Chúc phúc",
-          to: "/wedding/wishes",
-        },
-        {
-          name: "Chuyện chúng mình",
-          to: "/wedding/story",
-        },
-        {
-          name: "Album ảnh",
-          to: "/wedding/photos",
-        },
-      ],
+      items: MENU_ITEMS,
     };
   },
 

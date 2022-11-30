@@ -15,6 +15,7 @@
         class="w-page"
         :class="{ 'w-page--mobile': $vuetify.breakpoint.mobile }"
       />
+      <mobile-footer v-if="$vuetify.breakpoint.mobile" />
     </div>
   </v-app>
 </template>
@@ -22,9 +23,10 @@
 <script>
 import Headline from "~/components/wedding/headline.vue";
 import MainMenu from "~/components/wedding/main-menu.vue";
+import MobileFooter from "~/components/wedding/mobile-footer.vue";
 
 export default {
-  components: { MainMenu, Headline },
+  components: { MainMenu, Headline, MobileFooter },
 
   head() {
     return {
@@ -55,6 +57,7 @@ export default {
 
   &--mobile {
     width: 100%;
+    padding-bottom: 0px;
   }
 }
 
@@ -66,6 +69,8 @@ export default {
 
   &--mobile {
     padding: 58px 0 0 0;
+    min-height: calc(100vh - 224px);
+    margin-bottom: 32px;
   }
 }
 

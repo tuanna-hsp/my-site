@@ -56,11 +56,11 @@ export default {
         {
           date: "06/04/2018 - Lần đầu gặp gỡ",
           text: `
-Bọn mình gặp mặt lần đầu tại một sự kiện của hội người Việt tại Nhật.<br/>
+Chúng mình gặp mặt lần đầu tại một sự kiện của hội người Việt tại Nhật.<br/>
 Ấn tượng đầu với đối phương:<br/>
 Cô Dâu: “<i>Trời. Bạn này giống Lương Xuân Trường quá vậy.</i>” (Nhưng ko đẹp trai bằng 🙄)<br/>
-Chú Rể: <i>Chả có ấn tượng gì 🙈</i> (chắc còn bận chụp ảnh với fan)<br/>
-Sau event đó chúng mình có gặp nhau 1, 2 lần khi tham gia chung sự kiện nhưng không trò chuyện nhiều và cũng không có ấn tượng gì sâu sắc khác 🤣`,
+Chú Rể: <i>Không nhớ gì 🙈</i> (chắc còn bận chụp ảnh với fan)<br/>
+Sau sự kiện đó chúng mình có gặp nhau 1, 2 lần nữa nhưng không trò chuyện nhiều và cũng không có ấn tượng gì sâu sắc khác 🤣`,
           imageUrl: "/images/story/first_time.jpg",
         },
         {
@@ -75,7 +75,7 @@ P/S: Ông bà nói cấm có sai <i>Nhất cự ly, nhì tốc độ</i> 😄`,
           date: "15/06/2019 - Chính thức hẹn hò",
           text: `
 Vào một ngày đẹp trời sau khi tá túc cơm nước chơi bời ở nhà Chú Rể, Chú Rể cưỡi chiếc xe đạp không có yên sau chở Cô Dâu vắt vẻo trên ghi đông 😵‍💫, đạp phòi cơm suốt 3km để đưa Cô Dâu về nhà. Thành quả là Chú Rể cuối cùng cũng dám mở lời “ Tuấn thích Xu”<br/>
-Cô Dâu: <i>Ahihi 🤣</i><br/>
+Cô Dâu: <i>(Ahihi 🤣)</i><br/>
 Chú Rể: <i>(Chở vầy may mà không bị công an bắt, không là hết tỏ tình 😂)</i><br/>
 Và sau đó là những chuỗi ngày hẹn hò. Mọi người xem <a href="/wedding/photos">album ảnh</a> về những nơi chúng mình đã đi qua nha!
 `,
@@ -93,7 +93,7 @@ Chú Rể: <i>Chuyển sang nhà Cô Dâu ở nên từ đó không dám manh đ
           date: "14/2/2021 - Diamond Valentine",
           text: `Cô Dâu đồng ý rước Chú Rể về làm chồng❤️<br/>
 Chú Rể: <i>Xu cưới anh nha?</i><br/>
-Cô Dâu (nghĩ bụng): 🙄 <i>ủa là mình phải đi rước rể?</i>🤪`,
+Cô Dâu: (🙄 <i>Ủa là mình phải đi rước rể?</i>🤪)`,
           imageUrl: "/images/story/ring.jpg",
         },
         {
@@ -102,13 +102,13 @@ Cô Dâu (nghĩ bụng): 🙄 <i>ủa là mình phải đi rước rể?</i>🤪
           imageUrl: "/images/story/married.jpg",
         },
         {
-          date: "29/07/2021 - New life begins",
+          date: "29/07/2021 - Tình yêu nhân đôi",
           text: `Chúng mình quyết định để lại bằng chứng cho mối duyên vợ chồng 🐯❤️`,
           imageUrl: "/images/story/new_life.jpg",
         },
         {
-          date: "06/04/2022 - An-chan",
-          text: `Minh chứng cho sự gắn kết của chúng mình ra đời 👨‍👩‍👧❤️`,
+          date: "06/04/2022 - Bé Hổ con",
+          text: `Minh chứng cho sự gắn kết của chúng mình ra đời vào một ngày mùa xuân ngập tràn nắng và hoa anh đào 👨‍👩‍👧❤️`,
           imageUrl: "/images/story/tora.jpg",
         },
         {
