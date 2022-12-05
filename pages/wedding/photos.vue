@@ -107,6 +107,12 @@ export default {
           coverPhoto: "/images/albums/summer/cover.jpg",
           photos: [
             "/images/albums/summer/IMG_0026.mov",
+            "/images/album/summer/IMG_0714.jpeg",
+            "/images/album/summer/IMG_1906.jpg",
+            "/images/album/summer/IMG_6004.jpeg",
+            "/images/album/summer/IMG_6018.jpeg",
+            "/images/album/summer/IMG_6078.jpeg",
+            "/images/album/summer/IMG_6296.jpeg",
             "/images/albums/summer/IMG_0001.JPG",
             "/images/albums/summer/IMG_0002.JPG",
             "/images/albums/summer/IMG_0003.JPG",
@@ -152,6 +158,12 @@ export default {
             "/images/albums/autumn/IMG_0011.mov",
             "/images/albums/autumn/IMG_0012.mov",
             "/images/albums/autumn/IMG_0013.mov",
+            "/images/albums/autumn/IMG_3852.jpeg",
+            "/images/albums/autumn/IMG_4548.jpeg",
+            "/images/albums/autumn/IMG_6991.jpeg",
+            "/images/albums/autumn/IMG_7022.jpeg",
+            "/images/albums/autumn/IMG_7163.jpeg",
+            "/images/albums/autumn/IMG_7225.jpeg",
           ],
         },
         {
@@ -192,22 +204,74 @@ export default {
             "/images/albums/winter/IMG_0031.JPG",
           ],
         },
+        {
+          name: "Pre-wedding",
+          coverPhoto: "/images/albums/wedding/cover.jpg",
+          photos: [
+            "/images/albums/wedding/378A0030.jpg",
+            "/images/albums/wedding/378A0177.jpg",
+            "/images/albums/wedding/378A8732.jpg",
+            "/images/albums/wedding/378A8738.jpg",
+            "/images/albums/wedding/378A8747.jpg",
+            "/images/albums/wedding/378A8755.jpg",
+            "/images/albums/wedding/378A8757.jpg",
+            "/images/albums/wedding/378A8764.jpg",
+            "/images/albums/wedding/378A8772.jpg",
+            "/images/albums/wedding/378A8783.jpg",
+            "/images/albums/wedding/378A8791.jpg",
+            "/images/albums/wedding/378A8836.jpg",
+            "/images/albums/wedding/378A8850.jpg",
+            "/images/albums/wedding/378A8869.jpg",
+            "/images/albums/wedding/378A8943.jpg",
+            "/images/albums/wedding/378A9015.jpg",
+            "/images/albums/wedding/378A9034.jpg",
+            "/images/albums/wedding/378A9041.jpg",
+            "/images/albums/wedding/378A9069.jpg",
+            "/images/albums/wedding/378A9103.jpg",
+            "/images/albums/wedding/378A9162.jpg",
+            "/images/albums/wedding/378A9164.jpg",
+            "/images/albums/wedding/378A9221.jpg",
+            "/images/albums/wedding/378A9247.jpg",
+            "/images/albums/wedding/378A9271.jpg",
+            "/images/albums/wedding/378A9279.jpg",
+            "/images/albums/wedding/378A9299.jpg",
+            "/images/albums/wedding/378A9329.jpg",
+            "/images/albums/wedding/378A9351.jpg",
+            "/images/albums/wedding/378A9454.jpg",
+            "/images/albums/wedding/378A9534.jpg",
+            "/images/albums/wedding/378A9600.jpg",
+            "/images/albums/wedding/378A9608.jpg",
+            "/images/albums/wedding/378A9654.jpg",
+            "/images/albums/wedding/378A9853.jpg",
+            "/images/albums/wedding/NS3A6709.jpg",
+            "/images/albums/wedding/NS3A6751.jpg",
+            "/images/albums/wedding/NS3A6759.jpg",
+            "/images/albums/wedding/NS3A6773.jpg",
+            "/images/albums/wedding/NS3A6801.jpg",
+            "/images/albums/wedding/NS3A6810.jpg",
+            "/images/albums/wedding/NS3A6814.jpg",
+            "/images/albums/wedding/NS3A6833.jpg",
+            "/images/albums/wedding/NS3A6855.jpg",
+            "/images/albums/wedding/NS3A6875.jpg",
+            "/images/albums/wedding/NS3A6915.jpg",
+            "/images/albums/wedding/NS3A6945.jpg",
+            "/images/albums/wedding/NS3A6971.jpg",
+            "/images/albums/wedding/NS3A7087.jpg",
+            "/images/albums/wedding/NS3A7106.jpg",
+            "/images/albums/wedding/NS3A7222.jpg",
+          ],
+        },
       ],
     };
   },
 
   computed: {
     albumRows() {
-      const albumPerRow = 2;
-      const rows = [];
-
-      for (let i = 1; i <= this.albums.length; i++) {
-        if (i % albumPerRow === 0 || i === this.albums.length) {
-          rows.push(this.albums.slice(i - albumPerRow, i));
-        }
-      }
-
-      return rows;
+      return [
+        this.albums.slice(0, 2),
+        this.albums.slice(2, 4),
+        this.albums.slice(4, 6),
+      ];
     },
   },
 

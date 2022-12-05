@@ -117,7 +117,7 @@ Cô Dâu: (🙄 <i>Ủa là mình phải đi rước rể?</i>🤪)`,
 Mọi người hãy đến chung vui và chúc phúc cho chúng mình nha.<br/>
 Đừng quên để lại lời chúc <a href="/wedding/wishes">tại đây nha</a> 🥰<br/>
 Cám ơn mọi người đã đọc! Cảm ơn Gia Đình, Họ Hàng, Bạn Bè và tất cả những ai vẫn luôn theo dõi và quan tâm chúng mình❤️`,
-          imageUrl: "/images/story/wedding.jpeg",
+          imageUrl: "/images/story/wedding.jpg",
         },
       ],
     };
