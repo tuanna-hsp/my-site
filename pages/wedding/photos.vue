@@ -1,5 +1,24 @@
 <template>
   <v-container fluid>
+    <v-row class="w-album__row" no-gutters>
+      <v-col cols="12">
+        <div
+          class="w-album__cover-wrapper"
+          :class="{
+            'w-album__cover-wrapper--mobile': $vuetify.breakpoint.mobile,
+          }"
+        >
+          <img
+            class="w-album__cover"
+            :src="preWeddingALbum.coverPhoto"
+            @click.stop="showAlbum(preWeddingALbum)"
+          />
+        </div>
+        <h2 class="w-album__title">{{ preWeddingALbum.name }}</h2>
+        <p class="w-album__subtitle">{{ preWeddingALbum.photos.length }} ảnh</p>
+      </v-col>
+    </v-row>
+
     <v-row
       class="w-album__row"
       v-for="(row, index) in albumRows"
@@ -204,64 +223,64 @@ export default {
             "/images/albums/winter/IMG_0031.JPG",
           ],
         },
-        {
-          name: "Pre-wedding",
-          coverPhoto: "/images/albums/wedding/cover.jpg",
-          photos: [
-            "/images/albums/wedding/1.jpg",
-            "/images/albums/wedding/10.jpg",
-            "/images/albums/wedding/11.jpg",
-            "/images/albums/wedding/12.jpg",
-            "/images/albums/wedding/13.jpg",
-            "/images/albums/wedding/14.jpg",
-            "/images/albums/wedding/15.jpg",
-            "/images/albums/wedding/16.jpg",
-            "/images/albums/wedding/17.jpg",
-            "/images/albums/wedding/18.jpg",
-            "/images/albums/wedding/19.jpg",
-            "/images/albums/wedding/2.jpg",
-            "/images/albums/wedding/20.jpg",
-            "/images/albums/wedding/21.jpg",
-            "/images/albums/wedding/22.jpg",
-            "/images/albums/wedding/23.jpg",
-            "/images/albums/wedding/24.jpg",
-            "/images/albums/wedding/25.jpg",
-            "/images/albums/wedding/26.jpg",
-            "/images/albums/wedding/27.jpg",
-            "/images/albums/wedding/28.jpg",
-            "/images/albums/wedding/29.jpg",
-            "/images/albums/wedding/3.jpg",
-            "/images/albums/wedding/30.jpg",
-            "/images/albums/wedding/31.jpg",
-            "/images/albums/wedding/32.jpg",
-            "/images/albums/wedding/33.jpg",
-            "/images/albums/wedding/34.jpg",
-            "/images/albums/wedding/35.jpg",
-            "/images/albums/wedding/36.jpg",
-            "/images/albums/wedding/37.jpg",
-            "/images/albums/wedding/38.jpg",
-            "/images/albums/wedding/39.jpg",
-            "/images/albums/wedding/4.jpg",
-            "/images/albums/wedding/40.jpg",
-            "/images/albums/wedding/41.jpg",
-            "/images/albums/wedding/42.jpg",
-            "/images/albums/wedding/43.jpg",
-            "/images/albums/wedding/44.jpg",
-            "/images/albums/wedding/45.jpg",
-            "/images/albums/wedding/46.jpg",
-            "/images/albums/wedding/47.jpg",
-            "/images/albums/wedding/48.jpg",
-            "/images/albums/wedding/49.jpg",
-            "/images/albums/wedding/5.jpg",
-            "/images/albums/wedding/50.jpg",
-            "/images/albums/wedding/51.jpg",
-            "/images/albums/wedding/6.jpg",
-            "/images/albums/wedding/7.jpg",
-            "/images/albums/wedding/8.jpg",
-            "/images/albums/wedding/9.jpg",
-          ],
-        },
       ],
+      preWeddingALbum: {
+        name: "Pre-wedding",
+        coverPhoto: "/images/albums/wedding/cover.jpg",
+        photos: [
+          "/images/albums/wedding/1.jpg",
+          "/images/albums/wedding/10.jpg",
+          "/images/albums/wedding/11.jpg",
+          "/images/albums/wedding/12.jpg",
+          "/images/albums/wedding/13.jpg",
+          "/images/albums/wedding/14.jpg",
+          "/images/albums/wedding/15.jpg",
+          "/images/albums/wedding/16.jpg",
+          "/images/albums/wedding/17.jpg",
+          "/images/albums/wedding/18.jpg",
+          "/images/albums/wedding/19.jpg",
+          "/images/albums/wedding/2.jpg",
+          "/images/albums/wedding/20.jpg",
+          "/images/albums/wedding/21.jpg",
+          "/images/albums/wedding/22.jpg",
+          "/images/albums/wedding/23.jpg",
+          "/images/albums/wedding/24.jpg",
+          "/images/albums/wedding/25.jpg",
+          "/images/albums/wedding/26.jpg",
+          "/images/albums/wedding/27.jpg",
+          "/images/albums/wedding/28.jpg",
+          "/images/albums/wedding/29.jpg",
+          "/images/albums/wedding/3.jpg",
+          "/images/albums/wedding/30.jpg",
+          "/images/albums/wedding/31.jpg",
+          "/images/albums/wedding/32.jpg",
+          "/images/albums/wedding/33.jpg",
+          "/images/albums/wedding/34.jpg",
+          "/images/albums/wedding/35.jpg",
+          "/images/albums/wedding/36.jpg",
+          "/images/albums/wedding/37.jpg",
+          "/images/albums/wedding/38.jpg",
+          "/images/albums/wedding/39.jpg",
+          "/images/albums/wedding/4.jpg",
+          "/images/albums/wedding/40.jpg",
+          "/images/albums/wedding/41.jpg",
+          "/images/albums/wedding/42.jpg",
+          "/images/albums/wedding/43.jpg",
+          "/images/albums/wedding/44.jpg",
+          "/images/albums/wedding/45.jpg",
+          "/images/albums/wedding/46.jpg",
+          "/images/albums/wedding/47.jpg",
+          "/images/albums/wedding/48.jpg",
+          "/images/albums/wedding/49.jpg",
+          "/images/albums/wedding/5.jpg",
+          "/images/albums/wedding/50.jpg",
+          "/images/albums/wedding/51.jpg",
+          "/images/albums/wedding/6.jpg",
+          "/images/albums/wedding/7.jpg",
+          "/images/albums/wedding/8.jpg",
+          "/images/albums/wedding/9.jpg",
+        ],
+      },
     };
   },
 
