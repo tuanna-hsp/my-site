@@ -86,8 +86,8 @@ export default {
 
       this.isSending = true;
 
-      const name = this.form.name.substring(0, 30);
-      const message = this.form.message.substring(0, 500);
+      const name = this.form.name;
+      const message = this.form.message;
       const wish = { name, message };
 
       await fetch(API_URL, {
