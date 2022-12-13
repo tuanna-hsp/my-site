@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blogs", {data:[{articles:[{slug:"hello-world",title:"Hello World",createdAt:"2021-01-01T00:00:00.000Z"}]}],fetch:[],mutations:void 0});
