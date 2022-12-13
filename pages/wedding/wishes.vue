@@ -19,7 +19,7 @@
     <div class="w-comment-list">
       <div v-for="(wish, index) in wishes" :key="index">
         <h3>{{ wish.name }}</h3>
-        <p>{{ wish.message }}</p>
+        <p style="white-space: pre-line">{{ wish.message }}</p>
       </div>
     </div>
 
